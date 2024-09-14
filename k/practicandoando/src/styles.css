@@ -1,0 +1,11 @@
+/* src/styles.css */
+
+html, body {
+  height: 100%;
+  background-color: #ffffff; /* Fondo blanco para el cuerpo de la página */
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

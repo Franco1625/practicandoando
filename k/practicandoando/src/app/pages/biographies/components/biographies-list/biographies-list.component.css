@@ -1,0 +1,90 @@
+.biography-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fefefe;
+  padding: 20px;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.biography-card {
+  background-color: #fffbf2;
+  border: 1px solid #e0c097;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  color: #333333;
+  padding: 20px;
+  font-size: 16px;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.biography-card:hover {
+  transform: scale(1.01);
+}
+
+mat-card-content {
+  max-height: 260px;
+  overflow-y: auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  color: #ff7043;
+  margin-bottom: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+mat-card-title {
+  display: flex;
+  align-items: center;
+  padding: 16px 0;
+  min-height: 48px;
+  font-size: 1.4em;
+}
+
+.icon {
+  margin-right: 8px;
+  color: #ff7043;
+}
+
+mat-card-header, mat-card-footer {
+  background-color: #ffe0b2;
+  font-weight: bold;
+}
+
+mat-card-footer {
+  margin-top: 20px;
+  padding: 10px 0;
+}
+
+mat-card-footer p {
+  display: flex;
+  align-items: center;
+  margin: 15px 10px;
+}
+
+mat-card-footer mat-icon {
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+@media (max-width: 1200px) {
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+}

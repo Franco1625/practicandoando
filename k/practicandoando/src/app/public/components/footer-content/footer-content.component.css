@@ -1,0 +1,16 @@
+/* src/app/public/components/footer-content/footer-content.component.css */
+.footer-content {
+
+  bottom: 0;
+  width: 100%;
+  background-color: #d78f5b; /* Marrón oscuro */
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.footer-content p {
+  margin: 5px 0;
+}
+

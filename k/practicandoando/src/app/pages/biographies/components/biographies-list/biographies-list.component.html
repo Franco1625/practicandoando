@@ -1,0 +1,24 @@
+<!-- src/app/biographies/components/biographies-list/biographies-list.component.html -->
+<div class="biography-cards">
+  <h1>All biographies information</h1>
+  <div class="cards-container">
+    <mat-card *ngFor="let biography of biographies" class="biography-card">
+      <mat-card-header>
+        <mat-card-title>
+          <span class="icon">👤</span> <!-- Icono al lado del nombre -->
+          {{ biography.Title }}
+        </mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <div [innerHTML]="biography.Biography"></div>
+      </mat-card-content>
+      <mat-card-footer>
+        <p><mat-icon>fingerprint</mat-icon> Id: {{ biography.Id }}</p>
+        <p><mat-icon>update</mat-icon> Last Modified: {{ biography.LastModified }}</p>
+        <p><mat-icon>event</mat-icon> Publication Date: {{ biography.PublicationDate }}</p>
+        <p><mat-icon>calendar_today</mat-icon> Date Created: {{ biography.DateCreated }}</p>
+        <p><mat-icon>person</mat-icon> Provider: {{ biography.Provider }}</p>
+      </mat-card-footer>
+    </mat-card>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+{
+  "read-more": "Leer más",
+  "footer": {
+    "intro": "Desarrollado por",
+    "author": "{{ authorName }}"
+  },
+  "home": {
+    "welcome": "¡Bienvenido a la página de inicio!"
+  }
+}
